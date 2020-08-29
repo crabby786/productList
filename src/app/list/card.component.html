@@ -1,0 +1,16 @@
+<div class="product-details d-flex align-items-center mat-elevation-z3 mb-2">
+    <div class="img-container">
+      <img [src]="item.restaurant_image" alt="" class="img-fluid">
+    </div>
+    <div class="details">
+      <h6 class="text-primary h6">
+        {{item.restaurant_name}}
+      </h6>
+      <h6>
+        {{item.user_name}}
+      </h6>
+      <p class="mt-2 text-mute small">
+        {{item.time | date:"dd MMM yyyy"}}
+      </p>
+    </div>
+  </div>

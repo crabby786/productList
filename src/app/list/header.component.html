@@ -1,0 +1,34 @@
+
+<div class="row py-4">
+    <div class="filter-container  col-lg-8 ">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" value="All" (change)="handleChangeFilter($event)"
+            [checked]="isDaily === 'All'" >All
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" value="daily" (change)="handleChangeFilter($event)"
+            [checked]="isDaily === 'daily'" >Daily
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" value="weekly" (change)="handleChangeFilter($event)"
+            [checked]="isDaily === 'weekly'" >Weekly
+        </label>
+      </div>
+      <div class="form-check-inline ">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" value="monthly" (change)="handleChangeFilter($event)"
+            [checked]="isDaily === 'monthly'" >Monthly
+        </label>
+      </div>
+  
+      <!-- toggle list view -->
+      <div class="float-right mt-2 mt-sm-0">
+        <mat-slide-toggle  (change)="toggleListView($event)"> List View</mat-slide-toggle>
+      </div>
+    </div>
+  </div>
